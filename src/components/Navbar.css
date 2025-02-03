@@ -1,0 +1,41 @@
+
+.navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.linkS:hover {
+  color: #d8c35c;
+}
+
+.linkS{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+  @media (max-width: 480px) {
+    .navList {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      gap: 20px;
+      background-color: blanchedalmond;
+      padding: 10px;
+      position: absolute;
+      top: 80px;
+      right: 78%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .show ul {
+      display: flex; /* Show the menu when `show` class is added */
+    }
+  
+    .linkS {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }

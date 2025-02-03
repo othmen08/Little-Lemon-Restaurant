@@ -1,0 +1,21 @@
+.login {
+  background-image: url(../assets/resto1.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 480px) {
+  .login {
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+ 
+}

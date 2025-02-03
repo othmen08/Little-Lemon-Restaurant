@@ -1,0 +1,76 @@
+.nav-list {
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent wrapping of list items */
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+.nav-list {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.nav-list .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 1rem; /* Space between items */
+}
+
+.nav-list .list li {
+  display: inline-block; /* Ensure items stay in a single line */
+}
+
+.nav-list .list .item {
+  padding: 0.5rem 1rem; /* Add horizontal padding for better clickability */
+  border-radius: 8px;
+  background-color: #f4ce14;
+  text-decoration: none;
+  color: #333; /* Set a default text color */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-size: 1.5rem; /* Adjusted font size for better readability */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Hover effect */
+.nav-list .list .item:hover {
+  background-color: #c4b8a8; /* Darker background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Active link styling */
+.nav-list .list .item.active {
+  background-color: #a89f94; /* Different background for active state */
+  color: #fff; /* Change text color for active state */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-list .list {
+    gap: 0.75rem; /* Slightly reduce gap on smaller screens */
+    justify-content: flex-start; /* Align items to the start on mobile */
+    padding: 0 1rem; /* Add padding to the sides */
+  }
+
+  .nav-list .list .item {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .nav-list .list {
+    gap: 0.5rem; /* Further reduce gap on very small screens */
+  }
+
+  .nav-list .list .item {
+    font-size: 1rem; /* Even smaller font size for very small screens */
+    padding: 0.5rem; /* Adjust padding */
+  }
+}

@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #495e57, #607e74);
+  padding: 16px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  height: 368px;
+  width: 100%;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+h1 {
+  font-size: 64px;
+  color: #f4ce14;
+  /* font: medium; */
+}
+
+h2 {
+  font-size: 40px;
+  color: #edefee;
+  font: normal;
+}
+
+p {
+  font-size: 18px;
+  font-family: "karla", sans-serif;
+  font: medium;
+  color: white;
+}
+
+.btn_reserve {
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 8px 10px;
+  border: none;
+  background-color: #f4ce14;
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: black;
+  width: 170px;
+  
+}
+
+.img-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.chefPhoto {
+  width: 50%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding:0  10px;
+  }
+
+  h1 {
+    font-size: 64px; /* Reduce font size slightly */
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .chefPhoto {
+    width: 146px;
+    height: 151px;
+  }
+}

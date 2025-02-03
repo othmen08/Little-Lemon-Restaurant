@@ -1,0 +1,47 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logo-header{
+    width: 200px;
+   
+  }
+
+  .cart-icon{
+    display: block;
+    
+  }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+   
+  }
+
+  @media (max-width: 480px) {
+    header{
+      padding: 5px 10px;
+    }
+    .hamburger {
+      display: block; /* Show hamburger on smaller screens */
+     
+    }
+    .logo-header{
+      width: 150px;
+      
+      
+    }
+  
+    .cart-icon{
+      display: block;
+    
+    }
+   
+  }

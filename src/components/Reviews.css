@@ -1,0 +1,65 @@
+/* Base Styles */
+.group_reviews {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 70px;
+}
+
+.review {
+  width: 30%; /* Default to 3 cards in a row for larger screens */
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  row-gap: 10px;
+}
+
+.review img {
+  margin-top: 0;
+  height: 20%;
+  width: 20%;
+}
+
+.review p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.rating {
+  color: #EE9972;
+}
+
+article {
+  flex: 1;
+}
+
+
+
+@media (max-width: 480px) {
+  .group_reviews {
+    padding: 10px;
+  }
+
+  .review {
+    width: 100%; /* Each review card takes up the full width on small screens */
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .review img {
+    height: 30%; /* Increase image size for better visibility */
+    width: 30%;
+  }
+
+  .review p {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+}
