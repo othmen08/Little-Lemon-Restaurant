@@ -97,6 +97,10 @@
       
       
     }
+
+    .card:hover{
+      transform: none;
+    }
     .card img {
       height: 60%;
       width: 40%;

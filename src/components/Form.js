@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../components/Form.css";
+import { Link } from "react-router-dom";
+
 
 function Form() {
   // État pour basculer entre Login et Signup
@@ -118,9 +120,9 @@ function Form() {
         <span>
           {isLogin ? "Don’t have an account?" : "Already have an account?"}
         </span>
-        <a className="Signup-link" href="#" onClick={toggleForm}>
+        <Link className="Signup-link" to="/" onClick={toggleForm}>
           {isLogin ? "Sign up" : "Log in"}
-        </a>
+        </Link>
       </div>
     </form>
   );

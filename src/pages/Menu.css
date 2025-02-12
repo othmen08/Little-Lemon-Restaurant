@@ -1,18 +1,10 @@
-.main-menu{
-    
+.main-menu {
 }
 
-.menu{
-    background: url(../assets/menu.jpg);
+.menu {
+  background: url(../assets/menu.jpg);
+  text-align: center;
 }
 
-
-
-
-@media (max-width: 480px){
-    
+@media (max-width: 480px) {
 }
-
-
-
-

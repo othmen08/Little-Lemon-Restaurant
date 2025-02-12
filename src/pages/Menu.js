@@ -17,7 +17,7 @@ function Menu() {
         </section>
         <div className="menu">
             <div>
-                <h1>This week's specials</h1>
+                <h1>Menu</h1>
                 <ListMenu />
             </div>
             {menuSections.map((section) => (
