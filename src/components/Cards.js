@@ -18,8 +18,8 @@ function Cards({data,cart,setCart}) {
           <h2 className='price'>$ {card.price}</h2>
           <p>{card.description}</p>
           {location.pathname === "/order" ? (
-          <button onClick={() => addToCart(card)}>Add to Cart</button>)
-        :(<button type='submit'><Link to="/order">Order Now</Link></button>)}
+          <button className='btn_card'  onClick={() => addToCart(card)}>Add to Cart</button>)
+        :(<button className='btn_card' type='submit'><Link to="/order">Order Now</Link></button>)}
           </div>
         </article>
       ))}

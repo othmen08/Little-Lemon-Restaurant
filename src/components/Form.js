@@ -22,10 +22,8 @@ function Form() {
 
   return (
     <form className="form">
-      {/* Titre du formulaire */}
       <legend>{isLogin ? "Log in" : "Sign up"}</legend>
 
-      {/* Champ Username */}
       <div className="field">
         <label htmlFor="username">Username</label>
         <input
@@ -36,7 +34,6 @@ function Form() {
         />
       </div>
 
-      {/* Champ Email (uniquement pour Signup) */}
       {!isLogin && (
         <div className="field">
           <label htmlFor="email">Email</label>
@@ -49,7 +46,6 @@ function Form() {
         </div>
       )}
 
-      {/* Champ Password */}
       <div className="field">
         <label htmlFor="password">Password</label>
         <input
@@ -60,7 +56,6 @@ function Form() {
         />
       </div>
 
-      {/* Champ Confirm Password (uniquement pour Signup) */}
       {!isLogin && (
         <div className="field">
           <label htmlFor="confirmPassword">Confirm Password</label>
@@ -73,8 +68,7 @@ function Form() {
         </div>
       )}
 
-      {/* Checkbox "Subscribe to newsletters" (uniquement pour Signup) */}
-      {!isLogin && (
+         {!isLogin && (
         <div className="field">
           <label htmlFor="newsletter" className="checkbox-label">
             <input
@@ -89,7 +83,6 @@ function Form() {
         </div>
       )}
 
-      {/* Bouton de soumission */}
       <div className="field">
         <button className="btn_submit" type="submit">
           {isLogin ? "Log in" : "Join Little Lemon’s Family!"}
@@ -99,7 +92,6 @@ function Form() {
         </span>
       </div>
 
-      {/* Options de connexion avec Google ou Apple */}
       <div>
         <div className="field signupWith">
           <span>
@@ -115,7 +107,6 @@ function Form() {
         </div>
       </div>
 
-      {/* Lien pour basculer entre Login et Signup */}
       <div className="account">
         <span>
           {isLogin ? "Don’t have an account?" : "Already have an account?"}

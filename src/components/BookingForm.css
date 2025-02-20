@@ -1,185 +1,121 @@
+.booking-form {
+  background-color: rgba(100, 98, 95, 0.7);
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 20px;
+  margin: 30px;
+}
 
-  
+.field {
+  display: flex;
+  flex-direction: column;
+}
 
-.form {
-    background-color: rgba(100, 98, 95, 0.7);
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    padding: 20px;
-    margin: 30px;
-  }
-  
-  .field {
-    display: flex;
-    flex-direction: column;
-  }
+.field-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .field-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  label {
-    font-size: 24px;
-    color: white;
-  }
-  
-  input {
-    text-align: center;
-    height: 28px;
-    border-radius: 5px;
-    width: 60%;
-    border: none;
-    background-color: rgba(189, 188, 185, 0.7);
-    
-  }
-  legend {
-    font-size: 64px;
-    font: medium;
-    color: white;
-  }
-  
-  .btn_submit {
-    background-color: #f4ce14;
-    border: none;
-    color: black;
-    padding: 8px;
-    border-radius: 16px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .signupWith {
-    text-align: center;
-  }
-  
-  .signupWith span {
-    border: 1px solid #f4ce14;
-    margin: 2.5px;
-    border-radius: 16px;
-    padding: 5px;
-  }
-  
-  .account {
-    text-align: center;
-    color: white;
-  }
-  
-  .Signup-link {
-    color: #f4ce14;
-  }
-  
-  @media (max-width: 480px) {
-    .form {
-      max-width: 300px;
-    }
-  }
-  
+label {
+  font-size: 24px;
+  color: white;
+}
 
-  /* Styles pour les groupes de boutons radio */
+input {
+  text-align: center;
+  height: 28px;
+  border-radius: 5px;
+  width: 60%;
+  border: none;
+  background-color: rgba(189, 188, 185, 0.7);
+}
+legend {
+  font-size: 64px;
+  font: medium;
+  color: white;
+}
+
+.btn_submit {
+  background-color: #f4ce14;
+  border: none;
+  color: black;
+  padding: 8px;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.signupWith {
+  text-align: center;
+}
+
+.signupWith span {
+  border: 1px solid #f4ce14;
+  margin: 2.5px;
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.account {
+  text-align: center;
+  color: white;
+}
+
+.Signup-link {
+  color: #f4ce14;
+}
+
+
 .radio-group {
-    display: flex;
-    gap: 16px;
-    margin-top: 8px;
-  }
-  
-  .radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
-    color: white;
-  }
-  
-  /* Styles pour le dropdown */
-  select {
-    height: 36px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(189, 188, 185, 0.7);
-    padding: 0 10px;
-    font-size: 16px;
-    color: white;
-  }
-  
-  /* Styles pour le textarea */
-  textarea {
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(189, 188, 185, 0.7);
-    padding: 10px;
-    font-size: 16px;
-    color: white;
-    resize: vertical;
-  }
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: white;
+}
 
 
-  /* Reservations.css */
-.confirmation-form {
-    background-color: rgba(100, 98, 95, 0.7);
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 2rem auto;
+select {
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(189, 188, 185, 0.7);
+  padding: 0 10px;
+  font-size: 16px;
+  color: white;
+}
+
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(189, 188, 185, 0.7);
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  resize: vertical;
+}
+
+@media (max-width: 480px) {
+  .booking-form {
+    max-width: 350px;
   }
-  
-  .confirmation-details {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin: 1rem 0;
-  }
-  
-  .confirmation-details p {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-    color: white;
-  }
-  
-  .confirmation-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .btn_confirm {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-  
-  .btn_edit {
-    background-color: #f4ce14;
-    color: black;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-  
-  .btn_confirm:hover {
-    background-color: #45a049;
-    
-  }
-  
-  .btn_edit:hover {
-    background-color: #e0b800;
-    
-  }
+}

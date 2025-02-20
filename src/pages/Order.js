@@ -49,7 +49,7 @@ function Order() {
       <section className="order-online">
         {/* Liste des plats disponibles */}
         <div className="order-menu">
-          <h2>Menu</h2>
+          <h1>Online Menu:</h1>
           <Cards data={dataCardsMenu} cart={cart} setCart={setCart} />
 
         </div>

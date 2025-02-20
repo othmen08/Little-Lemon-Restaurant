@@ -1,4 +1,4 @@
-.Reservation_form {
+.Bookings {
     background-image: url(../assets/resto1.jpg);
     background-size: cover;
     min-height: 100vh;
@@ -6,4 +6,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }

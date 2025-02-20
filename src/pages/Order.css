@@ -10,7 +10,8 @@
   /* Menu */
   .order-menu {
     width: 100%;
-    
+    text-align: center;
+    padding-top: 20px;
   }
   
   .menu-items {
@@ -182,17 +183,7 @@
   .order-form button[type="button"]:hover {
     background-color: #bbb;
   }
-  
-  @media (max-width: 768px) {
-    .order-online {
-      flex-direction: column;
-    }
-    .menu-items {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    }
-  }
-  
-  
+
   @media (max-width: 480px) {
     .menu-items {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

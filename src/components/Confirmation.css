@@ -1,0 +1,107 @@
+/* Reservations.css */
+.confirmation-form {
+  background-color: rgba(100, 98, 95, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.confirmation-details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.confirmation-details th,
+.confirmation-details td {
+  padding: 0.5rem;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.confirmation-details th {
+  font-weight: bold;
+  width: 40%; /* Adjust width for the label column */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.confirmation-details td {
+  background-color: transparent;
+}
+
+.confirmation-details tr:last-child td {
+  border-bottom: none; /* Remove border for the last row */
+}
+
+.confirmation-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on small screens */
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn_confirm,
+.btn_edit {
+  width: 100%; /* Full-width buttons on small screens */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn_confirm {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn_edit {
+  background-color: #f4ce14;
+  color: black;
+}
+
+.btn_confirm:hover {
+  background-color: #45a049;
+}
+
+.btn_edit:hover {
+  background-color: #e0b800;
+}
+
+/* Media Query for Small Screens (under 480px) */
+@media (max-width: 480px) {
+  .confirmation-form {
+    padding: 0.5rem;
+    max-width: 350px;
+  }
+
+  .confirmation-details {
+    padding: 0.5rem;
+  }
+
+  .confirmation-details th,
+  .confirmation-details td {
+    padding: 0.25rem;
+    font-size: 0.9rem; /* Smaller font size for small screens */
+  }
+
+  .confirmation-details th {
+    width: 30%; /* Adjust width for smaller screens */
+  }
+
+  .confirmation-buttons {
+    gap: 0.25rem;
+  }
+
+  .btn_confirm,
+  .btn_edit {
+    padding: 10px 20px; /* Smaller padding for small screens */
+    font-size: 0.9rem; /* Smaller font size for buttons */
+  }
+}

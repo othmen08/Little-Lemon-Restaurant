@@ -1,0 +1,12 @@
+.Testimonials{
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 480px) {
+    .Testimonials {
+      padding: 20px;
+    }
+  }

@@ -58,7 +58,7 @@
     color:   #EE9972;
   }
   
-  button {
+  .btn_card {
     background-color: #a55216;
     color: white; 
     font-size: 20px;
@@ -67,7 +67,7 @@
     padding: 10px 20px
   }
   
-  button:hover {
+  .btn_card:hover {
     background-color: #bd7644;
     cursor: pointer;
     letter-spacing: 2px;

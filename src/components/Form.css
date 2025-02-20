@@ -14,7 +14,10 @@
   .field {
     display: flex;
     flex-direction: column;
+    
   }
+
+ 
   
   label {
     font-size: 24px;
@@ -26,6 +29,7 @@
     border-radius: 5px;
     border: none;
     background-color: rgba(189, 188, 185, 0.7);
+    width: 100%;
     
   }
   legend {

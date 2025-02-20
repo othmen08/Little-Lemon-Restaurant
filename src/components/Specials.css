@@ -1,0 +1,37 @@
+.specials{
+    display: grid;
+    grid-template-rows: 1f 2f ;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.specials div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.specials div button{
+    background-color: #a55216;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 1s;
+    padding: 10px 20px;
+}
+
+.specials div button:hover{
+    background-color:  #F4CE14;
+}
+
+@media (max-width: 480px) {
+    .specials div {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .specials div button {
+      font-size: 1rem; /* Further reduce font size for small screens */
+      padding: 6px 12px; /* Smaller button padding */
+    }
+  }

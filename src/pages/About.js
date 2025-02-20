@@ -1,7 +1,8 @@
+import Hero from "../components/Hero";
 function About() {
     return(
         
-        <p>every</p>
+        <Hero/>
         
     )
 }

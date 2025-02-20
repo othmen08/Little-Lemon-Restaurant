@@ -1,4 +1,4 @@
-.container {
+.hero {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,28 +6,21 @@
   padding: 16px;
   padding-bottom: 40px;
   margin: 0 auto;
-  height: 368px;
   width: 100%;
+  height: auto;
 }
 
 .hero-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  row-gap: 40px;
   width: 50%;
 }
 
-h1 {
-  font-size: 64px;
-  color: #f4ce14;
-  /* font: medium; */
-}
 
-h2 {
-  font-size: 40px;
+
+.hero-second-title {
   color: #edefee;
-  font: normal;
 }
 
 p {
