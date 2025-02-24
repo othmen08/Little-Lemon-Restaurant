@@ -14,6 +14,15 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
     contactPreference: "call",
   });
 
+  const isFormValid = () => {
+    return (
+      formData.date !== "" &&
+      formData.time !== "" &&
+      formData.guests > 0 &&
+      formData.guests <= 10
+    );
+  };
+
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   // Fetch available times when the date changes
@@ -53,17 +62,22 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
               value={formData.date}
               onChange={handleChange}
               required
+              aria-required="true"
             />
           </div>
 
           <div className="field-row">
-            <label htmlFor="time">Time:</label>
+            <label htmlFor="time" id="time-label">
+              Time:
+            </label>
             <select
               id="time"
               name="time"
               value={formData.time}
               onChange={handleChange}
               required
+              aria-required="true"
+              aria-labelledby="time-label"
             >
               <option value="">Select a time</option>
               {availableTimes.map((timeOption, index) => (
@@ -86,6 +100,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
               value={formData.guests}
               onChange={handleChange}
               required
+              aria-required="true"
             />
           </div>
 
@@ -123,6 +138,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
               value={formData.occasion}
               onChange={handleChange}
               required
+              aria-required="true"
             >
               <option value="">Select an occasion</option>
               <option value="birthday">Birthday</option>
@@ -137,6 +153,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
             <textarea
               id="specialRequest"
               name="specialRequest"
+              aria-label="Special Request"
               rows="4"
               value={formData.specialRequest}
               onChange={handleChange}
@@ -174,7 +191,12 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
           </div>
 
           <div className="field">
-            <button className="btn_submit" type="submit">
+            <button
+              className={"btn " + (isFormValid() ? "submit" : "disabled")}
+              type="submit"
+              disabled={!isFormValid()}
+              aria-disabled={!isFormValid()}
+            >
               Book my Table
             </button>
           </div>
