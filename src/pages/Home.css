@@ -1,7 +1,7 @@
 .Home-grid{
     display: grid;
     grid-template-rows: repeat(4,1fr);
-    height: auto; /* Allow for flexible height based on content */
+    height: auto; 
     width: 100%;
     margin: 0 auto;
     padding: 10px;
@@ -9,7 +9,7 @@
 
   @media (max-width: 480px) {
     .Home-grid {
-      grid-template-rows: repeat(3, 1fr); /* Ensure sections stack vertically on small devices */
+      grid-template-rows: repeat(3, 1fr); 
       height: auto;
     }
    

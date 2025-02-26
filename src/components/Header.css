@@ -5,7 +5,7 @@ header {
   z-index: 1000;
   background-color: blanchedalmond;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   height: 100px;
@@ -29,7 +29,7 @@ header {
   }
 
   .cart-icon{
-    display: block;
+    display: none;
     
   }
 
@@ -62,6 +62,8 @@ header {
   
     .cart-icon{
       display: block;
+      background-color: #a55216;
+      cursor: pointer;
     
     }
    

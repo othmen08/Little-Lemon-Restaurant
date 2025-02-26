@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  gap: 70px;
+  gap: 30px;
 }
 
 .Testimonial-Card {
@@ -16,14 +16,11 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid black;
   border-radius: 20px;
-  row-gap: 10px;
-  background-color: white;
+  background-color: #989c83;
 }
 
 .Testimonial-Card img {
-  margin-top: 0;
   height: 30%;
   width: 30%;
 }
@@ -35,7 +32,7 @@
 }
 
 .rating {
-  color: #EE9972;
+  color:  #f4ce14;
 }
 
 article {
@@ -51,6 +48,7 @@ article {
 
   .Testimonial-Card {
     width: 100%; /* Each review card takes up the full width on small screens */
+    max-height: 350px;
     margin: 10px 0;
     padding: 12px;
   }

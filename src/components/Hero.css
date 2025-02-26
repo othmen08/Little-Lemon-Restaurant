@@ -1,80 +1,70 @@
 .hero {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  
   background: linear-gradient(to bottom, #495e57, #607e74);
   padding: 16px;
-  padding-bottom: 40px;
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
 .hero-details {
+
   display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100% ;
 }
-
-
 
 .hero-second-title {
   color: #edefee;
+  font-size: 40px;
 }
 
-p {
+.hero-details  p {
   font-size: 18px;
   font-family: "karla", sans-serif;
   font: medium;
   color: white;
+  margin-top: 20px;
+ 
 }
 
 .btn_reserve {
+  align-self: flex-start;
   cursor: pointer;
+  text-align: center;
   border-radius: 16px;
-  padding: 8px 10px;
+  padding: 8px;
   border: none;
   background-color: #f4ce14;
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 20px;
   color: black;
-  width: 170px;
   
 }
 
-.img-box {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-}
+
 .chefPhoto {
-  width: 50%;
+  width: 350px;
   height: 300px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-right: 40px;
 }
 
-
-
 @media (max-width: 480px) {
-  .container {
-    width: 100%;
-    padding:0  10px;
-  }
-
-  h1 {
-    font-size: 64px; /* Reduce font size slightly */
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
   .chefPhoto {
     width: 146px;
     height: 151px;
+    margin-right: 0px;
+  }
+
+  .btn_reserve {
+    
+    font-size: 30px;
+    
+    
+    
   }
 }

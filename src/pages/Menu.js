@@ -11,7 +11,7 @@ function Menu() {
     { id: "desserts", title: "Desserts", data: dataMenuDesserts },
   ];
   return (
-    <section className="main-menu">
+    <>
         <section className="hero">
             <Hero />
         </section>
@@ -26,7 +26,7 @@ function Menu() {
         </section>
       ))}
         </div>
-    </section>
+    </>
   );
 }
 

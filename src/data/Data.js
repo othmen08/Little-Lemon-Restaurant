@@ -27,6 +27,13 @@ export const dataCardsReview = [
     rating: "★★★★★",
     review: "An absolute gem! The staff is super friendly, and the food is outstanding. Highly recommend!",
   },
+  {
+    id: "3",
+    img: markIcon,
+    name: "Mark",
+    rating: "★★★★★",
+    review: "An absolute gem! The staff is super friendly, and the food is outstanding. Highly recommend!",
+  },
 
   
 ];

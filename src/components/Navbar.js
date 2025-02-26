@@ -18,7 +18,7 @@ function Navbar({props}) {
             <Link className="linkS" to="menu">Menu</Link>
           </li>
           <li>
-            <Link className="linkS" to="Bookings">Bookings</Link>
+            <Link className="linkS" to="bookings">Bookings</Link>
           </li>
           <li>
             <Link className="linkS" to="order">Order</Link>

@@ -24,6 +24,10 @@ function Header() {
   };
   return (
    <header className={display ? "visible" : "hidden"}>
+    
+      <img className="logo-header" src={logo} alt="logo" />
+    
+      <Navbar props={isMenuOpen} />
       <button
         className="hamburger"
         onClick={toggleMenu}
@@ -31,9 +35,6 @@ function Header() {
       >
         ☰
       </button>
-      <img className="logo-header" src={logo} alt="logo" />
-      <Navbar props={isMenuOpen} />
-      <button className="cart-icon">🛒</button>
     </header>
   );
 }

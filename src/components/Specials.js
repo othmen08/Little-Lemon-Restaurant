@@ -5,7 +5,6 @@ export default function Specials({data}) {
         <section className="specials">
         <div>
           <h1>This weeks specials:</h1>
-          <button>Online Menu</button>
         </div>
         <Cards data={data} />
       </section>

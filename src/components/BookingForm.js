@@ -29,7 +29,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
   useEffect(() => {
     if (formData.date) {
       const selectedDate = new Date(formData.date);
-      const times = fetchAPI(selectedDate); // Call fetchAPI synchronously
+      const times = fetchAPI(selectedDate); 
       dispatch({ type: "UPDATE_TIMES", payload: times });
     }
   }, [formData.date, dispatch]);
