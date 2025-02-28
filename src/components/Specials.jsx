@@ -1,5 +1,5 @@
 import './Specials.css'
-import Cards from "../components/Cards";
+import Cards from "./Cards";
 export default function Specials({data}) {
     return(
         <section className="specials">
